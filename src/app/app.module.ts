@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 
-import { MatMenuModule, MatDialogModule,MatInputModule,MatFormFieldModule, MatCardModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from '@angular/material';
+import { MatCheckboxModule,MatSliderModule, MatMenuModule, MatDialogModule,MatInputModule,MatFormFieldModule, MatCardModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from '@angular/material';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -28,6 +28,7 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ModalComponent } from './pages/proyectos/modal/modal.component';
 import { NavComponent } from './shared/layout/nav/nav.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { BaseComponent } from './pages/base/base.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { InicioComponent } from './pages/inicio/inicio.component';
     ProyectosComponent,
     ModalComponent,
     NavComponent,
-    InicioComponent
+    InicioComponent,
+    BaseComponent
   ],
   imports: [
     BrowserModule,
@@ -57,10 +59,13 @@ import { InicioComponent } from './pages/inicio/inicio.component';
     MatFormFieldModule, 
     MatCardModule, 
     MatToolbarModule, 
-    MatIconModule, 
+    MatIconModule,
     MatSidenavModule, 
     MatListModule, 
     MatButtonModule,
+    MatSliderModule,
+    MatCheckboxModule
+    
   ],
   entryComponents: [
     ModalComponent

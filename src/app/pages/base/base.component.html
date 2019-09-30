@@ -1,0 +1,99 @@
+<app-sidenav> 
+<div class="row">
+    <div class="col-md-6">
+        <label>Video en vivo</label>
+        <div class="video">
+
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <label>Recorido</label>
+        <div class="video">
+    
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="row">
+    
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Motors speed</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <mat-checkbox>Use general</mat-checkbox>
+                    </div>
+                    <div class="col-md-12">
+                        <label>General</label>
+                        <mat-slider   thumbLabel
+                        [displayWith]="formatLabel"
+                        tickInterval="255"
+                        min="1"
+                        max="255"></mat-slider>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Motor 1</label>
+                        <mat-slider></mat-slider>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Motor 2</label>
+                        <mat-slider></mat-slider>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Motor 3</label>
+                        <mat-slider></mat-slider>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Motor 4</label>
+                        <mat-slider></mat-slider>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Sensors</h4>
+                    </div>
+                    <div class="col-md-12 mt-md-2">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h3 class="float-left mr-md-2">eje x: </h3><h3 class="float-left"> 10</h3>
+                            </div>
+                            <div class="col-md-3">
+                                <h3 class="float-left mr-md-2">eje y: </h3><h3 class="float-left"> 80</h3>
+                            </div>
+                            <div class="col-md-3">
+                                <h3 class="float-left mr-md-2">eje z: </h3><h3 class="float-left"> 120</h3>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="col-md-6 mt-md-3">
+                        <h3 class="float-left mr-md-3">Temperatura:</h3><h3 class="float-left"> 28 °C</h3>
+                    </div>
+                    <div class="col-md-6 mt-md-3">
+                        <h3 class="float-left mr-md-3">Humedad:</h3><h3 class="float-left"> 58%</h3>
+                    </div>
+
+                    <div class="col-md-6 mt-md-3">
+                        <h3 class="float-left mr-md-3">Bateria: </h3><h3 class="float-left"> 94%</h3>
+                    </div>
+                    
+                    <div class="col-md-6 mt-md-3">
+                            <h3 class="float-left mr-md-3">Distancia: </h3><h3 class="float-left"> 35.2m</h3>
+                    </div>
+
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+
+</div>
+
+
+</app-sidenav>  
